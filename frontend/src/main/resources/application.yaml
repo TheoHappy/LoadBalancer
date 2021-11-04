@@ -1,0 +1,11 @@
+server:
+  port: 9097
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_HOST:http://localhost:9098/eureka/}
+  instance:
+    instance-id: frontend-instance
+spring:
+  application:
+    name: frontend
